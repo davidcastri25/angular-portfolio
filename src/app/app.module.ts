@@ -1,16 +1,24 @@
+/* Angular Imports */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+/* App Imports */
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PortfolioModule } from './portfolio/portfolio.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    /* Angular */
     BrowserModule,
-    AppRoutingModule
+    /* Propios */
+    AppRoutingModule,
+    PortfolioModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
