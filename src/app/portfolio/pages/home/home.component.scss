@@ -1,0 +1,12 @@
+/* Imports */
+@import "../../../shared/scss-components/color"; //Paleta de colores
+@import "../../../shared/scss-components/tipografia"; //Tipografia
+
+.fondo {
+  background-color: $softBlue;
+}
+
+.image-profile {
+  border: 8px solid $hardBrown;
+  border-radius: 50%;
+}
