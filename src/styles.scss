@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/shared/scss-components/color"; //Paleta de colores
+@import "./app/shared/scss-components/tipografia"; //Tipografia
+
+body {
+  background-color: $newWhite;
+}

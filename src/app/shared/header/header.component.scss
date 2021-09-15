@@ -1,6 +1,37 @@
 /* Imports */
 @import "../scss-components/color"; //Paleta de colores
+@import "../scss-components/tipografia"; //Tipografia
 
 nav {
-  background-color: $softbrown;
+  background-color: $softBrown;
+
+  //Título de la página
+  .navbar-brand {
+    font-family: $titulos;
+    font-size: 25px;
+    color: $textoTitulos;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $softBlue,
+      0 0 40px $softBlue, 0 0 50px $softBlue, 0 0 60px $softBlue,
+      0 0 70px $softBlue;
+    letter-spacing: 2px;
+  }
+
+  //Botón hamburguesa
+  .navbar-toggler {
+    color: $hardBlue;
+  }
+
+  //Links de navegación
+  .nav-link {
+    font-family: $cuerpo;
+    border-bottom: 3px solid transparent;
+  }
+
+  //Cuando los links estén activos
+  .active {
+    border-bottom: 3px solid $hardBlue;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $softBlue,
+      0 0 40px $softBlue, 0 0 50px $softBlue, 0 0 60px $softBlue,
+      0 0 70px $softBlue;
+  }
 }

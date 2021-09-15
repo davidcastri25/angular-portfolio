@@ -1,0 +1,24 @@
+/* Imports */
+@import "../scss-components/color"; //Paleta de colores
+@import "../scss-components/tipografia"; //Tipografia
+
+.links {
+  background-color: $softBrown;
+  font-family: $cuerpo;
+
+  h6 {
+    font-family: $titulos;
+    letter-spacing: 1px;
+  }
+}
+
+.under-footer {
+  background-color: $hardBrown;
+
+  p {
+    font-family: $titulos;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: $newWhite;
+  }
+}
