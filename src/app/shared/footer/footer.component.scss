@@ -16,7 +16,7 @@
     border: 3px solid $logosInactivos;
     border-radius: 50%;
 
-    .bi {
+    fa-icon {
       font-size: 25px;
       color: $logosInactivos;
     }
@@ -25,9 +25,15 @@
     border-color: $softBlue;
     background-color: $softBlue;
 
-    .bi {
+    fa-icon {
       color: $hardBrown;
     }
+  }
+
+  //Tecnologias
+  .tecnologias {
+    font-size: 35px;
+    color: $logosInactivos;
   }
 }
 

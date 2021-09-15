@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faAngular, faBootstrap, faCss3, faGithub, faHtml5, faLinkedin, faSass } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +9,13 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class FooterComponent implements OnInit {
   
   /* Properties */
-  faCoffee = faCoffee;
+  //Icons
+  faGitHub = faGithub;
+  faLinkedIn = faLinkedin; 
+  faHTML = faHtml5;
+  faSASS = faSass;
+  faBootstrap = faBootstrap;
+  faAngular = faAngular; 
 
   constructor() { }
 
