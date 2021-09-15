@@ -10,6 +10,25 @@
     font-family: $titulos;
     letter-spacing: 1px;
   }
+
+  //Logos de RRSS
+  .rrss-container {
+    border: 3px solid $logosInactivos;
+    border-radius: 50%;
+
+    .bi {
+      font-size: 25px;
+      color: $logosInactivos;
+    }
+  }
+  .rrss-container:hover {
+    border-color: $softBlue;
+    background-color: $softBlue;
+
+    .bi {
+      color: $hardBrown;
+    }
+  }
 }
 
 .under-footer {
