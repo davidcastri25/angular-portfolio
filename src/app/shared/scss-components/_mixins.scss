@@ -1,0 +1,18 @@
+/* Imports */
+@import "./color"; //Paleta de colores
+@import "./tipografia"; //Tipografia
+
+/* Mixin para los headers de cada apartado (sobre mí, formación, etc) */
+@mixin section-header {
+  font-family: $titulos;
+  color: $textoTitulos;
+  border-bottom: 3px solid $hardPrimary;
+  padding-bottom: 7px;
+  margin-bottom: 25px;
+}
+
+/* Mixin para jumbotron en sobre mí */
+@mixin jumbotron-coloured {
+  padding: 20px;
+  font-family: $cuerpo;
+}
