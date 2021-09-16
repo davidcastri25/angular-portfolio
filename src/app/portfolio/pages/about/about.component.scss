@@ -11,6 +11,7 @@ h2 {
   text-align: justify;
 }
 
+/* Sección sobre mí */
 .jumbotron {
   background-color: $card;
   border-radius: 5px;
@@ -31,6 +32,7 @@ h2 {
   }
 }
 
+/* Sección formación IT */
 .jumbotron-coloured {
   @include jumbotron-coloured;
   width: 100%;
@@ -48,4 +50,23 @@ h2 {
 
 #verde {
   background-color: $contrast;
+}
+
+/* Sección experiencia y formación antigua */
+.exp-form-container {
+  width: 100%;
+  padding: 20px;
+
+  h5,
+  h6 {
+    font-family: $titulos;
+  }
+
+  .exp-form-apartado {
+    font-weight: bold;
+  }
+}
+
+.fecha {
+  color: $contrast;
 }
