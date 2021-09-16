@@ -1,5 +1,32 @@
-<section class="fondo d-flex justify-content-center">
-    <div class="image-container p-3">
-        <img class="img-fluid image-profile" src="../../../../assets/images/david-profile.jpg" alt="Profile Img">
+<section class="fondo d-flex flex-column justify-content-center align-items-center">
+
+    <!-- Foto -->
+    <div class="image-container p-3 mt-4 mb-2">
+        <img class="img-fluid image-profile" src="../../../../assets/images/david-profile-round.jpg" alt="Profile Img">
+    </div>
+
+    <!-- Nombre -->
+    <div class="barra-separacion mb-2 p-2">
+        <h2 class="text-center mb-3">David Castrillón Lladós</h2>
+    </div>
+
+    <!-- Profesión -->
+    <div class="mt-3 mb-2">
+        <h5 class="text-center">Junior Front-End Developer - Angular</h5>
+    </div>
+
+    <!-- Links -->
+    <div class="mb-5 mt-1">
+        <!-- LinkedIn -->
+        <a class="rrss-container btn btn-lg btn-floating me-4"
+            href="https://www.linkedin.com/in/david-castrill%C3%B3n-llad%C3%B3s-35010713b" target="_blank"
+            rel="noopener noreferrer" role="button">
+            <fa-icon [icon]="faLinkedIn"></fa-icon>
+        </a>
+        <!-- GitHub -->
+        <a class="rrss-container btn btn-lg btn-floating ms-4" href="https://github.com/davidcastri25" target="_blank"
+            rel="noopener noreferrer" role="button">
+            <fa-icon [icon]="faGitHub"></fa-icon>
+        </a>
     </div>
 </section>

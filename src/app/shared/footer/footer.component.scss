@@ -3,7 +3,7 @@
 @import "../scss-components/tipografia"; //Tipografia
 
 .links {
-  background-color: $softBrown;
+  background-color: $softPrimary;
   font-family: $cuerpo;
 
   h6 {
@@ -13,37 +13,45 @@
 
   //Logos de RRSS
   .rrss-container {
-    border: 3px solid $logosInactivos;
+    border: 3px solid $footerText;
     border-radius: 50%;
 
     fa-icon {
       font-size: 25px;
-      color: $logosInactivos;
+      color: $footerText;
     }
   }
   .rrss-container:hover {
-    border-color: $softBlue;
-    background-color: $softBlue;
+    border-color: $contrast;
+    background-color: $contrast;
 
     fa-icon {
-      color: $hardBrown;
+      color: $hardPrimary;
     }
   }
 
   //Tecnologias
   .tecnologias {
     font-size: 35px;
-    color: $logosInactivos;
+    color: $footerText;
   }
 }
 
 .under-footer {
-  background-color: $hardBrown;
+  background-color: $hardPrimary;
 
   p {
     font-family: $titulos;
     font-size: 17px;
     letter-spacing: 2px;
-    color: $newWhite;
+    color: $fondo;
   }
+}
+
+.text-footer {
+  color: $footerText;
+}
+
+.footer-nav-links:hover {
+  color: $hardPrimary;
 }

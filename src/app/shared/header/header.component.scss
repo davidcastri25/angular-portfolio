@@ -3,22 +3,22 @@
 @import "../scss-components/tipografia"; //Tipografia
 
 nav {
-  background-color: $softBrown;
+  background-color: $softPrimary;
 
   //Título de la página
   .navbar-brand {
     font-family: $titulos;
     font-size: 25px;
     color: $textoTitulos;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $softBlue,
-      0 0 40px $softBlue, 0 0 50px $softBlue, 0 0 60px $softBlue,
-      0 0 70px $softBlue;
+    // text-shadow: 0 0 10px $contrast, 0 0 20px $contrast, 0 0 30px $contrast,
+    //   0 0 40px $contrast, 0 0 50px $contrast, 0 0 60px $contrast,
+    //   0 0 70px $contrast;
     letter-spacing: 2px;
   }
 
   //Botón hamburguesa
   .navbar-toggler {
-    color: $hardBlue;
+    color: $contrast;
   }
 
   //Links de navegación
@@ -29,9 +29,9 @@ nav {
 
   //Cuando los links estén activos
   .active {
-    border-bottom: 3px solid $hardBlue;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $softBlue,
-      0 0 40px $softBlue, 0 0 50px $softBlue, 0 0 60px $softBlue,
-      0 0 70px $softBlue;
+    border-bottom: 3px solid $contrast;
+    // text-shadow: 0 0 10px $contrast, 0 0 20px $contrast, 0 0 30px $contrast,
+    //   0 0 40px $contrast, 0 0 50px $contrast, 0 0 60px $contrast,
+    //   0 0 70px $contrast;
   }
 }

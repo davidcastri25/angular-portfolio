@@ -3,10 +3,53 @@
 @import "../../../shared/scss-components/tipografia"; //Tipografia
 
 .fondo {
-  background-color: $softBlue;
-}
+  background-color: $card;
+  box-shadow: inset 130px 0px 75px -50px $fondo,
+    inset -130px 0px 75px -50px $fondo;
 
-.image-profile {
-  border: 8px solid $hardBrown;
-  border-radius: 50%;
+  /* Foto perfil */
+  .image-profile {
+    border: 8px solid $contrast;
+    border-radius: 50%;
+  }
+
+  .barra-separacion {
+    border-bottom: 3px solid $contrast;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+
+  h2 {
+    font-family: $titulos;
+    color: $textoTitulos;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  h5 {
+    font-family: $cuerpo;
+    color: $textoTitulos;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  //Logos de RRSS
+  .rrss-container {
+    border: 3px solid $textoTitulos;
+    border-radius: 50%;
+
+    fa-icon {
+      font-size: 25px;
+      color: $footerText;
+    }
+  }
+
+  .rrss-container:hover {
+    border-color: $contrast;
+    background-color: $contrast;
+
+    fa-icon {
+      color: $hardPrimary;
+    }
+  }
 }
