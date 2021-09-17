@@ -1,0 +1,12 @@
+<div class="exp-form-container">
+    <h5 class="exp-form-apartado mb-4">EXPERIENCIA</h5>
+    <div class="d-flex flex-column flex-lg-row justify-content-between mb-5"
+    *ngFor = "let experiencia of experiencias">
+        <div class="flex-grow-1">
+            <h5>{{ experiencia.posicion }}</h5>
+            <h6>{{ experiencia.empresa }}</h6>
+            <p class="texto">{{ experiencia.descripcion }}</p>
+        </div>
+        <div class="flex-shrink-0"><span class="texto fecha">{{ experiencia.fecha }}</span></div>
+    </div>
+</div>

@@ -33,6 +33,17 @@
     letter-spacing: 1px;
   }
 
+  //Link a sobre mí
+  .btn {
+    background-color: $contrast;
+    color: $fondo;
+    font-family: $cuerpo;
+    letter-spacing: 0.7px;
+  }
+
+  .btn:hover {
+    background-color: $hardPrimary;
+  }
   //Logos de RRSS
   .rrss-container {
     border: 3px solid $textoTitulos;

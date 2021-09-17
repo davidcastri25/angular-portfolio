@@ -1,5 +1,7 @@
 /* Imports */
 @import "../../../shared/scss-components/mixins"; //Mixins
+@import "../../../shared/scss-components/color"; //Colores
+@import "../../../shared/scss-components/tipografia"; //Tipografía
 
 h2 {
   @include section-header;
@@ -56,17 +58,4 @@ h2 {
 .exp-form-container {
   width: 100%;
   padding: 20px;
-
-  h5,
-  h6 {
-    font-family: $titulos;
-  }
-
-  .exp-form-apartado {
-    font-weight: bold;
-  }
-}
-
-.fecha {
-  color: $contrast;
 }

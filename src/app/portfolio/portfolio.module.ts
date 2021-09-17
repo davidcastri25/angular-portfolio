@@ -7,10 +7,15 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 /* App Imports */
-import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
+import { AppRoutingModule } from '../app-routing.module';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { FormacionComponent } from './components/formacion/formacion.component';
+
+
 
 
 
@@ -19,7 +24,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienciaComponent,
+    FormacionComponent
   ],
   exports: [
     HomeComponent,
@@ -31,7 +38,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     /* Angular */
     CommonModule,
     /* Third-Party */
-    FontAwesomeModule
+    FontAwesomeModule,
+    /* Propios */
+    AppRoutingModule
   ]
 })
 export class PortfolioModule { }

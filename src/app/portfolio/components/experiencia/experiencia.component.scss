@@ -1,0 +1,19 @@
+/* Imports */
+@import "../../../shared/scss-components/mixins"; //Mixins
+@import "../../../shared/scss-components/color"; //Colores
+@import "../../../shared/scss-components/tipografia"; //Tipografía
+
+.exp-form-container {
+  h5,
+  h6 {
+    font-family: $titulos;
+  }
+
+  .exp-form-apartado {
+    font-weight: bold;
+  }
+}
+
+.fecha {
+  color: $contrast;
+}

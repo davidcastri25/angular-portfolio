@@ -1,0 +1,11 @@
+<div class="exp-form-container">
+    <h5 class="exp-form-apartado mb-4">FORMACIÓN</h5>
+    <div class="d-flex flex-column flex-lg-row justify-content-between mb-5"
+    *ngFor = "let formacion of formaciones">
+        <div class="flex-grow-1">
+            <h5>{{ formacion.titulo }}</h5>
+            <h6>{{ formacion.centro }}</h6>            
+        </div>
+        <div class="flex-shrink-0"><span class="texto fecha">{{ formacion.fecha }}</span></div>
+    </div>
+</div>
