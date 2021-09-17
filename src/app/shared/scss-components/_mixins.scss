@@ -13,6 +13,17 @@
 
 /* Mixin para jumbotron en sobre mí */
 @mixin jumbotron-coloured {
-  padding: 20px;
+  padding: 25px;
   font-family: $cuerpo;
+}
+
+@mixin boton {
+  background-color: $contrast;
+  color: $fondo;
+  font-family: $cuerpo;
+  letter-spacing: 0.7px;
+}
+
+@mixin boton-hover {
+  background-color: $hardPrimary;
 }

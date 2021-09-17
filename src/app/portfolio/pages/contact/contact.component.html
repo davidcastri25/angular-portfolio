@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<section class="mt-4">
+    <!-- Título -->
+    <h2 class="text-center">Contacto</h2>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-4 mb-4">                   
+        <p class="texto text-center">Puedes ponerte en contacto conmigo a través del siguiente formulario y te responderé a la mayor brevedad. Estaré encantado de resolver cualquier duda o pregunta que puedas tener.
+        </p>        
+    </div>
+
+    <!-- Formulario -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-6">
+            <form id="contactForm">
+                <!-- Nombre input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nombre" type="text" placeholder="Nombre y apellidos"/>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <div class="invalid-feedback">A name is required.</div>
+                </div>
+                <!-- Correo input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="text" placeholder="nombre@ejemplo.com"/>
+                    <label for="email">Correo electrónico</label>
+                    <div class="invalid-feedback">An email is required.</div>
+                    <div class="invalid-feedback">Email is not valid.</div>
+                </div>
+                <!-- Asunto input-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="asunto" type="text" placeholder="Asunto"/>
+                    <label for="asunto">Asunto</label>
+                    <div class="invalid-feedback">A phone number is required.</div>
+                </div>
+                <!-- Message input-->
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                        style="height: 10rem" data-sb-validations="required"></textarea>
+                    <label for="message">Message</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                </div>
+                
+                <!-- Submit Button-->
+                <div class="d-flex">
+                    <button class="btn flex-grow-1" id="submitButton"
+                    type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

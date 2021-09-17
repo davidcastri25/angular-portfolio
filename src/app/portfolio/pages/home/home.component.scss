@@ -1,6 +1,7 @@
 /* Imports */
 @import "../../../shared/scss-components/color"; //Paleta de colores
 @import "../../../shared/scss-components/tipografia"; //Tipografia
+@import "../../../shared/scss-components/mixins"; //Mixins
 
 .fondo {
   background-color: $card;
@@ -35,14 +36,11 @@
 
   //Link a sobre mí
   .btn {
-    background-color: $contrast;
-    color: $fondo;
-    font-family: $cuerpo;
-    letter-spacing: 0.7px;
+    @include boton;
   }
 
   .btn:hover {
-    background-color: $hardPrimary;
+    @include boton-hover;
   }
   //Logos de RRSS
   .rrss-container {

@@ -1,0 +1,30 @@
+/* Imports */
+@import "../../../shared/scss-components/mixins"; //Mixins
+@import "../../../shared/scss-components/color"; //Colores
+@import "../../../shared/scss-components/tipografia"; //Tipografía
+
+h2 {
+  @include section-header;
+}
+
+.texto {
+  font-family: $cuerpo;
+  letter-spacing: 0.8px;
+  text-align: justify;
+}
+
+/* Sección sobre mí */
+.jumbotron {
+  background-color: $card;
+  border-radius: 5px;
+}
+
+form {
+  #submitButton {
+    @include boton;
+  }
+
+  #submitButton:hover {
+    @include boton-hover;
+  }
+}
