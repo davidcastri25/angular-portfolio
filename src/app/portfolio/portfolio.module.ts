@@ -17,6 +17,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SharedModule } from '../shared/shared.module';
+import { MensajeModalComponent } from './components/mensaje-modal/mensaje-modal.component';
 
 
 
@@ -28,7 +29,8 @@ import { SharedModule } from '../shared/shared.module';
     ContactComponent,
     ExperienciaComponent,
     FormacionComponent,
-    FormularioComponent
+    FormularioComponent,
+    MensajeModalComponent
   ],
   exports: [
     HomeComponent,

@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+/* Angular Imports */
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+/* App Imports */
+import { MensajeService } from '../../services/mensaje.service';
 
 @Component({
   selector: 'app-formulario',
@@ -17,8 +21,13 @@ export class FormularioComponent implements OnInit {
     mensaje: [, Validators.required]
   });
 
+  //Orden de mostrar mensaje
+  @Output() onMostrarMensaje = new EventEmitter();
+  
   /* CONSTRUCTOR */
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private mensajeService: MensajeService) { }
 
   ngOnInit(): void {
   }
@@ -35,9 +44,16 @@ export class FormularioComponent implements OnInit {
     //Si el formulario no es válido marcamos todos los campos como tocados para que aparezcan los errores
     if (this.miFormulario.invalid) {
       this.miFormulario.markAllAsTouched();
-    }
-    //Si es válido, reseteamos el formulario
+    }    
     else {
+      
+      //Mandamos orden de que hay que mostrar el mensaje
+      this.onMostrarMensaje.emit();
+
+      //Pasamos dato del color al mensaje service
+      this.mensajeService.setRojo(false);
+
+      //Reseteamos el formulario
       this.miFormulario.reset();
     }
   }

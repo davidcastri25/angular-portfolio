@@ -1,15 +1,19 @@
 <div 
     class="modal-container"
-    *ngIf="mostrar">
+    >
     <div class="modal-dialog">
         <div 
         class="modal-content"        
         [ngClass]="{'rojo': rojo}">
             <div class="modal-header border-bottom-0">                
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button 
+                (click)="eliminarMensaje()"
+                type="button" 
+                class="btn-close" 
+                aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Modal body text goes here.</p>
+                <p>{{ mensaje }}</p>
             </div>
         </div>
     </div>

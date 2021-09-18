@@ -11,10 +11,15 @@
     <!-- Formulario -->
     <div class="row justify-content-center mb-5">
         <div class="col-lg-6">
-            <app-formulario></app-formulario>            
+            <app-formulario 
+                (onMostrarMensaje)="onMostrarMensaje()"
+            >
+            </app-formulario>            
         </div>
     </div>
 
-    <!-- Caja mensaje -->
-    <app-mensaje-modal></app-mensaje-modal>
+    <!-- Caja mensaje: solo se mostrará si mostrar es true -->
+    <app-mensaje-modal 
+    *ngIf="mostrar"
+    (onEliminarMensaje)="onEliminarMensaje()"></app-mensaje-modal>
 </section>

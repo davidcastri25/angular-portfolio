@@ -9,7 +9,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MensajeModalComponent } from './mensaje-modal/mensaje-modal.component';
 
 
 
@@ -17,13 +16,11 @@ import { MensajeModalComponent } from './mensaje-modal/mensaje-modal.component';
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent,
-    MensajeModalComponent
+    FooterComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    MensajeModalComponent
   ],
   imports: [
     /* Angular */

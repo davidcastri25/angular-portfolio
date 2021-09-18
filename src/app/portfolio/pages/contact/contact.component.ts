@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  mostrar!: boolean; //Si es false no se mostrará el mensaje
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  /* METHODS */
+  onMostrarMensaje() {
+    this.mostrar = true;
+  }
+
+  onEliminarMensaje() {
+    this.mostrar = false;
   }
 
 }
