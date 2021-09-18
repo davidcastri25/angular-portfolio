@@ -1,0 +1,21 @@
+.modal-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: right;
+}
+
+.modal-dialog {
+  margin: 20px;
+}
+
+.modal-content {
+  background-color: rgb(141, 247, 141);
+}
+
+.rojo {
+  background-color: rgb(248, 122, 122);
+}

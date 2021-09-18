@@ -3,17 +3,16 @@
 @import "../../../shared/scss-components/color"; //Colores
 @import "../../../shared/scss-components/tipografia"; //Tipografía
 
-h2 {
-  @include section-header;
-}
+form {
+  #mensaje {
+    height: 200px;
+  }
 
-.texto {
-  font-family: $cuerpo;
-  letter-spacing: 0.8px;
-  text-align: justify;
-}
+  #submitButton {
+    @include boton;
+  }
 
-.jumbotron {
-  background-color: $card;
-  border-radius: 5px;
+  #submitButton:hover {
+    @include boton-hover;
+  }
 }

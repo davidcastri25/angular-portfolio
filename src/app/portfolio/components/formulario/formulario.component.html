@@ -1,0 +1,73 @@
+<form
+    (ngSubmit)="enviar()"
+    [formGroup]="miFormulario">
+    <!-- Nombre input-->
+    <div class="form-floating mb-3">
+        <input 
+            class="form-control" 
+            id="nombre" 
+            type="text" 
+            placeholder="Nombre y apellidos"
+            formControlName="nombre"
+            [ngClass]="{'is-invalid': campoNoEsValido('nombre')}"
+            />
+        <label for="nombre">Nombre y apellidos</label>
+        <div class="invalid-feedback">
+            El campo es obligatorio.
+        </div>
+    </div>
+    <!-- Correo input-->
+    <div class="form-floating mb-3">
+        <input 
+            class="form-control" 
+            id="email" 
+            type="text" 
+            placeholder="nombre@ejemplo.com"
+            formControlName="email"
+            [ngClass]="{'is-invalid': campoNoEsValido('email')}"/>
+        <label for="email">Correo electrónico</label>
+        <div 
+            class="invalid-feedback"
+            [ngClass]="{'d-none': miFormulario.controls.email.value !== ''}">
+            El campo es obligatorio.
+        </div>
+        <div 
+            class="invalid-feedback"
+            [ngClass]="{'d-none': miFormulario.controls.email.value === ''}">
+            La dirección de correo no cumple con el formato.
+        </div>
+    </div>
+    <!-- Asunto input-->
+    <div class="form-floating mb-3">
+        <input 
+            class="form-control" 
+            id="asunto" 
+            type="text" 
+            placeholder="Asunto"
+            formControlName="asunto"
+            [ngClass]="{'is-invalid': campoNoEsValido('asunto')}"/>
+        <label for="asunto">Asunto</label>
+        <div class="invalid-feedback">
+            El campo es obligatorio.
+        </div>
+    </div>
+    <!-- Message input-->
+    <div class="form-floating mb-3">
+        <textarea 
+            class="form-control" 
+            id="mensaje" 
+            type="text" 
+            placeholder="Escribe tu mensaje aquí..."
+            formControlName="mensaje"
+            [ngClass]="{'is-invalid': campoNoEsValido('mensaje')}"></textarea>
+        <label for="mensaje">Mensaje</label>
+        <div class="invalid-feedback">
+            El campo es obligatorio.
+        </div>
+    </div>
+
+    <!-- Submit Button-->
+    <div class="d-flex">
+        <button class="btn flex-grow-1" id="submitButton" type="submit">Enviar</button>
+    </div>
+</form>
