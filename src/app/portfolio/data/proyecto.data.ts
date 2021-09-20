@@ -13,7 +13,7 @@ export const PROYECTOS: Proyecto[] = [
     },
     {
         titulo: 'App de Registro de Coches (pendiente subir a hosting)',
-        descripcion: 'App donde se pide al usuario la información para generar un coche mediante formulario validado y se muestran sus datos en pantalla una vez creado.',
+        descripcion: 'App donde se pide al usuario la información para generar un coche mediante formulario validado.',
         tecnologias: 'HTML5 | Bootstrap 5 | TypeScript',
         imagen: '../../../../assets/images/proyectos/vehiculos-ts.jpg',
         enlacePagina: '',
