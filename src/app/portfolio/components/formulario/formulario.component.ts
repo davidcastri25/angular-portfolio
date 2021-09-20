@@ -57,4 +57,6 @@ export class FormularioComponent implements OnInit {
       this.miFormulario.reset();
     }
   }
+  
 }
+

@@ -28,12 +28,12 @@
         <label for="email">Correo electrónico</label>
         <div 
             class="invalid-feedback"
-            [ngClass]="{'d-none': miFormulario.controls.email.value !== ''}">
+            [ngClass]="{'d-none': miFormulario.controls.email.hasError('email')}">
             El campo es obligatorio.
         </div>
         <div 
             class="invalid-feedback"
-            [ngClass]="{'d-none': miFormulario.controls.email.value === ''}">
+            [ngClass]="{'d-none': miFormulario.controls.email.hasError('required')}">
             La dirección de correo no cumple con el formato.
         </div>
     </div>
