@@ -1,0 +1,8 @@
+/* Imports */
+@import "../../../shared/scss-components/mixins"; //Mixins
+@import "../../../shared/scss-components/color"; //Colores
+@import "../../../shared/scss-components/tipografia"; //Tipografía
+
+h2 {
+  @include section-header;
+}

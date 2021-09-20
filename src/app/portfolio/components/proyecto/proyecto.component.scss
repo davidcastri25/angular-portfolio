@@ -1,0 +1,42 @@
+/* Imports */
+@import "../../../shared/scss-components/mixins"; //Mixins
+@import "../../../shared/scss-components/color"; //Colores
+@import "../../../shared/scss-components/tipografia"; //Tipografía
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 100%;
+
+  .titulo {
+    font-family: $titulos;
+    font-size: 17px;
+  }
+
+  .texto {
+    font-family: $cuerpo;
+    font-size: 15px;
+  }
+
+  img {
+    border-bottom: 1px solid $softPrimary;
+  }
+  .card-body {
+    background-color: $card;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .btn {
+    @include boton;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 $hardPrimary;
+
+  .btn:hover {
+    @include boton-hover;
+  }
+}

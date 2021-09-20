@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SharedModule } from '../shared/shared.module';
 import { MensajeModalComponent } from './components/mensaje-modal/mensaje-modal.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 
 
@@ -30,7 +31,8 @@ import { MensajeModalComponent } from './components/mensaje-modal/mensaje-modal.
     ExperienciaComponent,
     FormacionComponent,
     FormularioComponent,
-    MensajeModalComponent
+    MensajeModalComponent,
+    ProyectoComponent
   ],
   exports: [
     HomeComponent,
