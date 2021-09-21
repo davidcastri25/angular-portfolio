@@ -8,7 +8,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-proyecto',
   templateUrl: './proyecto.component.html',
-  styleUrls: ['./proyecto.component.scss']
+  styleUrls: ['./proyecto.component.scss'],
 })
 export class ProyectoComponent implements OnInit {
   /* PROPERTIES */

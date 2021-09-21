@@ -4,10 +4,11 @@
     <h2 class="text-center">Proyectos</h2>
 
     <!-- Card container -->
-    <div class="row justify-content-center justify-content-md-evenly mb-5 mt-3 px-3 px-lg-0">
+    <div class="row justify-content-center justify-content-md-evenly mb-5 mt-3 px-3 px-lg-0"
+    [@fadeIn]>
         <!-- Proyecto -->
         <app-proyecto 
-        class="col-md-5 col-lg-3 my-3 mx-1"
+        class="col-md-5 col-lg-3 my-3 mx-1"                       
         *ngFor="let proyecto of proyectos"
         [titulo]="proyecto.titulo"
         [descripcion]="proyecto.descripcion"

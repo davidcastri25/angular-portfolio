@@ -1,4 +1,5 @@
 /* Angular Imports */
+import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 /* App Imports */
@@ -8,8 +9,24 @@ import { ProyectosService } from '../../services/proyectos.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      // state('void', style({
+      //   opacity: 0
+      // })),
+      transition('* => *', [
+        query(':enter', [ //:enter es lo mismo que void => *
+          style({ opacity: 0 }),
+          stagger(400, [
+            animate('0.5s', style({ opacity: 1 }))
+          ])
+        ])
+      ]),
+    ]),
+  ]
 })
+
 export class ProjectsComponent implements OnInit {
   /* PROPERTIES */
   proyectos: Proyecto[] = [];

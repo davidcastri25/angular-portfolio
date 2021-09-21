@@ -1,5 +1,6 @@
 /* Angular Imports */
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -44,6 +45,7 @@ import { ProyectoComponent } from './components/proyecto/proyecto.component';
     /* Angular */
     CommonModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     /* Third-Party */
     FontAwesomeModule,
     /* Propios */
