@@ -1,6 +1,6 @@
 /* Angular Imports */
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
 
 /* App Imports */
 import { AppRoutingModule } from './app-routing.module';
@@ -20,7 +20,7 @@ import { SharedModule } from './shared/shared.module';
     PortfolioModule,
     SharedModule
   ],
-  providers: [],
+  providers: [Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

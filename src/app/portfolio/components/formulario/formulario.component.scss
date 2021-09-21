@@ -4,6 +4,8 @@
 @import "../../../shared/scss-components/tipografia"; //Tipografía
 
 form {
+  font-family: $cuerpo;
+
   #mensaje {
     height: 200px;
   }
