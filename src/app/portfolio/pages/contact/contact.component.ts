@@ -1,9 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [
+    //Animación para que la página haga un fadeIn sutil
+    trigger('cargarPagina', [
+      transition('void => *', [
+        style({opacity: 0}),
+        animate(300, style({opacity: 1}))
+      ])
+    ])
+  ]
 })
 export class ContactComponent implements OnInit {
 

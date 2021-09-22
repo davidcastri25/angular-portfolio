@@ -1,5 +1,5 @@
 /* Angular Imports */
-import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
+import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 /* App Imports */
@@ -11,17 +11,22 @@ import { ProyectosService } from '../../services/proyectos.service';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   animations: [
-    trigger('fadeIn', [
-      // state('void', style({
-      //   opacity: 0
-      // })),
+    //Animación para que la página haga un fadeIn sutil (aquí aplicado solo al h2, ya que las fichas de proyecto tienen una animación a parte especial)
+    trigger('cargarPagina', [
+      transition('void => *', [
+        style({opacity: 0}),
+        animate(300, style({opacity: 1}))
+      ])
+    ]),   
+    //Animación para que los proyectos vayan apareciendo uno a uno
+    trigger('fadeIn', [ 
       transition('* => *', [
         query(':enter', [ //:enter es lo mismo que void => *
           style({ opacity: 0 }),
           stagger(400, [
             animate('0.5s', style({ opacity: 1 }))
           ])
-        ])
+        ], { optional: true })
       ]),
     ]),
   ]
