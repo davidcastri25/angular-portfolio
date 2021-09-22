@@ -1,6 +1,6 @@
 /* Angular Imports */
 import { Component, OnInit } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 /* Third Party Imports */
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';

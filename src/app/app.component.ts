@@ -36,8 +36,6 @@ export class AppComponent implements OnInit {
       //Subscribimos el data de la ruta en la que estamos, así podremos leer la data de la ruta
       rt.data.subscribe(data => {
 
-        console.log(data);
-
         //Asignamos el nuevo title
         this.titleService.setTitle(data.title);
 
