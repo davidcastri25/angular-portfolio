@@ -10,9 +10,6 @@ nav {
     font-family: $titulos;
     font-size: 25px;
     color: $textoTitulos;
-    // text-shadow: 0 0 10px $contrast, 0 0 20px $contrast, 0 0 30px $contrast,
-    //   0 0 40px $contrast, 0 0 50px $contrast, 0 0 60px $contrast,
-    //   0 0 70px $contrast;
     letter-spacing: 2px;
   }
 
@@ -24,14 +21,37 @@ nav {
   //Links de navegación
   .nav-link {
     font-family: $cuerpo;
-    border-bottom: 3px solid transparent;
+    // border-bottom: 3px solid transparent;
+    position: relative;
+  }
+
+  //Pseudoelemento after (escondido, width 0)
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: $contrast;
+    height: 2.5px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
+  }
+
+  //On hover, pseudoelemento width al 100%
+  .nav-link:hover:after {
+    width: 100%;
   }
 
   //Cuando los links estén activos
-  .active {
-    border-bottom: 3px solid $contrast;
-    // text-shadow: 0 0 10px $contrast, 0 0 20px $contrast, 0 0 30px $contrast,
-    //   0 0 40px $contrast, 0 0 50px $contrast, 0 0 60px $contrast,
-    //   0 0 70px $contrast;
+  .active::after {
+    // border-bottom: 3px solid $contrast;
+    content: "";
+    position: absolute;
+    background-color: $contrast;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
   }
 }
