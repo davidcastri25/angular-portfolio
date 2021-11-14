@@ -12,7 +12,15 @@ export const PROYECTOS: Proyecto[] = [
         enlaceCodigo: 'https://github.com/davidcastri25/m6-bootstrap-lvl1.git'
     },
     {
-        titulo: 'App de Registro de Coches (pendiente subir a hosting)',
+        titulo: 'Prueba técnica IT Academy',
+        descripcion: 'App que valida los comandos introducidos para mover un rover en Marte.',
+        tecnologias: 'Angular | Bootstrap 5',
+        imagen: '../../../../assets/images/proyectos/prova-tecnica.jpg',
+        enlacePagina: '',
+        enlaceCodigo: 'https://github.com/davidcastri25/angular-prova-tecnica-itacademy.git'
+    },
+    {
+        titulo: 'App de Registro de Coches',
         descripcion: 'App donde se pide al usuario la información para generar un coche mediante formulario validado.',
         tecnologias: 'HTML5 | Bootstrap 5 | TypeScript',
         imagen: '../../../../assets/images/proyectos/vehiculos-ts.jpg',
@@ -28,7 +36,7 @@ export const PROYECTOS: Proyecto[] = [
         enlaceCodigo: 'https://github.com/davidcastri25/m7.1-javascriptBasic-lvl2-3.git'
     },
     {
-        titulo: 'Generador de Chistes (pendiente subir a hosting)',
+        titulo: 'Generador de Chistes',
         descripcion: 'App que llama a la API requerida y devuelve un chiste. Llamada a la API realizada mediante jQuery AJAX.',
         tecnologias: 'HTML5 | SASS | jQuery',
         imagen: '../../../../assets/images/proyectos/api-jquery.jpg',
