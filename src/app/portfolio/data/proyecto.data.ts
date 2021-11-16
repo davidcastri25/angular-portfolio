@@ -20,6 +20,14 @@ export const PROYECTOS: Proyecto[] = [
         enlaceCodigo: 'https://github.com/davidcastri25/angular-prova-tecnica-itacademy.git'
     },
     {
+        titulo: 'Generador de códigos QR',
+        descripcion: 'App que integra el paquete angular2-qrcode.',
+        tecnologias: 'Angular | Bootstrap 5',
+        imagen: '../../../../assets/images/proyectos/qr-generator.jpg',
+        enlacePagina: '',
+        enlaceCodigo: 'https://github.com/davidcastri25/angular-qr-code-generator.git'
+    },
+    {
         titulo: 'App de Registro de Coches',
         descripcion: 'App donde se pide al usuario la información para generar un coche mediante formulario validado.',
         tecnologias: 'HTML5 | Bootstrap 5 | TypeScript',
